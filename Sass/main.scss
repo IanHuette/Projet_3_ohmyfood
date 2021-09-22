@@ -1,7 +1,123 @@
-header .logo {
-    height: 33px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+$color: #f2f2f2;
+$colorw: #fff;
+$margindefault: 0;
+$margin: 15px;
+$marginrl: 20px;
+body {
+    margin: $margindefault;
+}
+header{
+    display: block; /*bloquer mettre l'ombre en dessous du header */
+    h1 {
+        margin: $margindefault;
+    }
+    .logo {
+        display: block;
+        position: relative;
+        top: 7px;
+        height: 33px;
+        margin: auto;
+        padding: $marginrl;
+    }
+}
+.localization {
+    display: flex;
+    justify-content: center;
+    background-color: $color;
+    margin: auto;
+    padding: $margin;
+    &__icon {
+        margin-right: $margin;
+    }
+    &__text {
+        font-size: 18px;
+    }
+}
+.firstsection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 1.80rem;
+    h2 {
+        display: block;
+        margin: 0.70rem;
+    }
+    p {
+        margin: $margindefault;
+    }
+    input {
+        margin: 1.80rem auto;
+        box-shadow: 0 0 1.20rem rgb(0 0 0 / 13%);
+    }
+}
+.sectionfonction {
+    margin-left: $marginrl;
+    margin-right: $marginrl;
+    margin-top: 45px;
+    margin-bottom: 60px;
+    h2 {
+        margin-bottom: 30px;
+    }
+    &__disposition {
+        background-color: $color;
+        margin-block-end: 1.20rem;
+        padding: 7px;
+        border-radius: 1.10rem;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+    }
+}
+.sectionfood {
+    display: flex;
+    flex-direction: column;
+    background-color: $color;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    h2 {
+        margin-left: $marginrl;
+    }
+    &__containfood {
+        margin-left: $marginrl;
+        margin-right: $marginrl;
+        margin-block-end: $marginrl;
+        background-color: white;
+        border-radius: 1rem;
+        box-shadow: 0 5px 15px #00000033;
+        &--img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover; /*image de la note enchantée n'est pas vraiment bien centré */
+            border-radius: 1rem 1rem 0rem 0rem ;
+        }
+        h3 {
+            margin-top: 8px;
+            margin-left: 10px;
+            margin-bottom: $margindefault;
+        }
+        p {
+            margin-left: 10px;
+            margin-top: 3px;
+        }
+    }
+}
+.sectionfooter {
+    height: 175px;
+    background-color: #353535;
+    &__logofooter {
+        color: $colorw;
+        text-decoration: none;
+        h3 {
+            padding-top: $marginrl;
+            margin-top: $margindefault;
+            margin-left: $marginrl;
+        }
+    }
+    &__containfooter {
+        margin-block-end: 7px;
+        &--decoration {
+        text-decoration: none;
+        color: $colorw;
+        margin-left: $marginrl;
+        }
+    }
 }

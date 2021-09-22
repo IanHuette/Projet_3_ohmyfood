@@ -1,9 +1,129 @@
-header .logo {
-  height: 33px;
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+header {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
+  /*bloquer mettre l'ombre en dessous du header */
+}
+header h1 {
+  margin: 0;
+}
+header .logo {
+  display: block;
+  position: relative;
+  top: 7px;
+  height: 33px;
+  margin: auto;
+  padding: 20px;
+}
+
+.localization {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  margin: auto;
+  padding: 15px;
+}
+.localization__icon {
+  margin-right: 15px;
+}
+.localization__text {
+  font-size: 18px;
+}
+
+.firstsection {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f6f6f6;
+  padding: 1.8rem;
+}
+.firstsection h2 {
+  display: block;
+  margin: 0.7rem;
+}
+.firstsection p {
+  margin: 0;
+}
+.firstsection input {
+  margin: 1.8rem auto;
+  box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.13);
+}
+
+.sectionfonction {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 45px;
+  margin-bottom: 60px;
+}
+.sectionfonction h2 {
+  margin-bottom: 30px;
+}
+.sectionfonction__disposition {
+  background-color: #f2f2f2;
+  margin-block-end: 1.2rem;
+  padding: 7px;
+  border-radius: 1.1rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.13);
+}
+
+.sectionfood {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.sectionfood h2 {
+  margin-left: 20px;
+}
+.sectionfood__containfood {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-block-end: 20px;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px #00000033;
+}
+.sectionfood__containfood--img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  /*image de la note enchantée n'est pas vraiment bien centré */
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+.sectionfood__containfood h3 {
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+.sectionfood__containfood p {
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.sectionfooter {
+  height: 175px;
+  background-color: #353535;
+}
+.sectionfooter__logofooter {
+  color: #fff;
+  text-decoration: none;
+}
+.sectionfooter__logofooter h3 {
+  padding-top: 20px;
+  margin-top: 0;
+  margin-left: 20px;
+}
+.sectionfooter__containfooter {
+  margin-block-end: 7px;
+}
+.sectionfooter__containfooter--decoration {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
