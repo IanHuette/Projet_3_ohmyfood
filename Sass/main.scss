@@ -5,6 +5,7 @@ $margin: 15px;
 $marginrl: 20px;
 body {
     margin: $margindefault;
+    height: 0;
 }
 header{
     display: block; /*bloquer mettre l'ombre en dessous du header */
@@ -115,6 +116,119 @@ header{
 .sectionfooter {
     height: 175px;
     background-color: #353535;
+    &__logofooter {
+        color: $colorw;
+        text-decoration: none;
+        h3 {
+            padding-top: $marginrl;
+            margin-top: $margindefault;
+            margin-left: $marginrl;
+        }
+    }
+    &__containfooter {
+        margin-block-end: 7px;
+        &--decoration {
+        text-decoration: none;
+        color: $colorw;
+        margin-left: $marginrl;
+        }
+        &--decoration1 {
+        text-decoration: none;
+        color: $colorw;
+        margin-left: 5px;
+        }
+    }
+    &__icon {
+        font-size: 15px;
+        color: $colorw;
+        margin-left: $marginrl;
+    }
+    &__icon1 {
+        font-size: 10px;
+        color: $colorw;
+        margin-left: $marginrl;
+    }
+}
+
+
+/* page menudélice à implanter dans le sass */
+
+.restaurantContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 13px;
+    &__arrow {
+        color: #353535;
+        font-size: 20px;
+        position: relative;
+        right: 65px;
+        top: 7px;
+    }
+    &__imgfood {
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+    }
+}
+.mainbackground {
+    display: flex;
+    flex-direction: column;
+    background-color: $color;
+    border-radius: 2rem 2rem 0 0;
+    position: relative;
+    bottom: 50px;
+    h2 {
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+    &__title {
+    font-size: 17px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 35px;
+    }
+    &__contentsmenu {
+        margin-left: 12px;
+        margin-right: 12px;
+        padding-left: 8px;
+        padding-right: 8px;
+        background-color: $colorw;
+        border-radius: 1rem;
+        box-shadow: 0 5px 10px #00000033;
+        &--price {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 10px;
+        }
+        h3 {
+            padding-top: 10px;
+            margin-bottom: 5px;
+        }
+        p{
+            margin: 0;
+            margin-bottom: 13px;
+        }
+    }
+    &__widthinput {
+        text-align: center;
+        margin-top: 25px;
+    }
+    input {
+        padding: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 15px;
+        margin-bottom: 50px;
+        box-shadow: 0 0 1.20rem rgb(0 0 0 / 13%);
+        border-radius: 1rem;
+    }
+}
+.sectionfootermenu {
+    height: 175px;
+    background-color: #353535;
+    position: relative;
+    bottom: 50px;
     &__logofooter {
         color: $colorw;
         text-decoration: none;
