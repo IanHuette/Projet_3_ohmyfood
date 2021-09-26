@@ -151,7 +151,7 @@ header{
 }
 
 
-/* page menudélice à implanter dans le sass */
+/* page scss des menus à implanter dans le sass */
 
 .restaurantContainer {
     display: flex;
@@ -178,11 +178,24 @@ header{
     border-radius: 2rem 2rem 0 0;
     position: relative;
     bottom: 50px;
-    h2 {
+    &__titleheader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: -15px;
+        h2 {
         padding-top: 30px;
         padding-left: 20px;
+        font-size: 30px;
     }
-    &__title {
+    &--iconh2 {
+            margin-right: 40px;
+            font-size: 24px;
+            position: relative;
+            top: 14px;
+        }
+    }
+    &__title { /* bloquer mettre border bottom d'une taille fixe */
     font-size: 17px;
     margin-left: 20px;
     margin-bottom: 30px;
@@ -214,7 +227,7 @@ header{
         text-align: center;
         margin-top: 25px;
     }
-    input {
+    input { /* bloquer mettre l'input avec le dégradé de couleur */
         padding: 10px;
         padding-left: 30px;
         padding-right: 30px;
