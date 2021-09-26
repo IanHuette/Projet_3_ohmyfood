@@ -79,6 +79,10 @@ header{
     background-color: $color;
     padding-top: 30px;
     padding-bottom: 40px;
+    a { /* les <a fonctionne mais prennent aussi en compte le margin */
+        text-decoration: none;
+        color: initial;
+    }
     h2 {
         margin-left: $marginrl;
     }

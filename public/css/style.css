@@ -84,6 +84,11 @@ header .logo {
   padding-top: 30px;
   padding-bottom: 40px;
 }
+.sectionfood a {
+  /* les <a fonctionne mais prennent aussi en compte le margin */
+  text-decoration: none;
+  color: initial;
+}
 .sectionfood h2 {
   margin-left: 20px;
 }
