@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/css/style.css">
     <title>Menu- La note enchantée</title>
 </head>
     <body>
-        <header>
+        <header class="pagemenu">
+            <a href="/index.html"><i class="fa-arrow-left fas pagemenu__arrow"></i></a>
             <div class="restaurantContainer">
-                <a href="/index.html"><i class="fa-arrow-left fas restaurantContainer__arrow"></i></a>
-                <img class="logomenu" src="logo/ohmyfood@2x.svg" href="#">
+                <img src="logo/ohmyfood@2x.svg" href="#">
             </div>
         </header>
+        
         <img class="restaurantContainer__imgfood" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
         <main class="mainbackground">
             <div class="mainbackground__titleheader">
@@ -24,78 +28,81 @@
             </div>
             <section class="mainbackground__section">
                 <h3 class="mainbackground__title">ENTRÉES</h3>
-                <article class="mainbackground__contentsmenu">
+                <div class="mainbackground__title--item"></div>
+                <article class="mainbackground__contentsmenu1">
                     <h3>Ravioles de foie gras</h3>
                     <div class="mainbackground__contentsmenu--price">
-                        <p>Accompagnés de leur crème à la truffe</p>
-                        <p>25€</p>
+                        <p class="light">Accompagnés de leur crème à la truffe</p>
+                        <p class="bold">25€</p>
                     </div>
                 </article>
                 <article class="mainbackground__contentsmenu">
                     <h3>Caviar osciètre</h3>
                     <div class="mainbackground__contentsmenu--price">
-                        <p>Sur blini à la farine de blé noir</p>
-                        <p>35€</p>
+                        <p class="light">Sur blini à la farine de blé noir</p>
+                        <p class="bold">35€</p>
                     </div>
                 </article>
                 <article class="mainbackground__contentsmenu">
                     <h3>Homard et espuma</h3>
                     <div class="mainbackground__contentsmenu--price">
-                        <p>Mariné aux zest d'orange</p>
-                        <p>20€</p>
+                        <p class="light">Mariné aux zest d'orange</p>
+                        <p class="bold">20€</p>
                     </div>
                 </article>
                 <article class="mainbackground__contentsmenu">
                     <h3>Foie gras de canard cuit entier</h3>
                     <div class="mainbackground__contentsmenu--price">
-                        <p>Confiture de figue et pain toasté</p>
-                        <p>35€</p>
+                        <p class="light">Confiture de figue et pain toasté</p>
+                        <p class="bold">35€</p>
                     </div>
                 </article>
 
                 <h3 class="mainbackground__title">PLATS</h3>
-                <article class="mainbackground__contentsmenu">
+                <div class="mainbackground__title--item"></div>
+                <article class="mainbackground__contentsmenu1">
                     <h3>Noix de coquilles Saint-Jacques</h3>
                     <div class="mainbackground__contentsmenu--price">
-                        <p>Sur lit de purée de céleri-rave</p>
-                        <p>40€</p>
+                        <p class="light">Sur lit de purée de céleri-rave</p>
+                        <p class="bold">40€</p>
                     </div>
                 </article>
                 <article class="mainbackground__contentsmenu">
                     <h3>Langoustine poêlée</h3>
                     <div class="mainbackground__contentsmenu--price">
-                        <p>Purée de patate douce</p>
-                        <p>35€</p>
+                        <p class="light">Purée de patate douce</p>
+                        <p class="bold">35€</p>
                     </div>
                 </article>
                 <article class="mainbackground__contentsmenu">
                     <h3>Mijoté de queue de boeuf</h3>
                     <div class="mainbackground__contentsmenu--price">
-                        <p>Et riz sauvage aux zests de citron</p>
-                        <p>44€</p>
+                        <p class="light">Et riz sauvage aux zests de citron</p>
+                        <p class="bold">44€</p>
                     </div>
                 </article>
 
-                <h3 class="mainbackground__title">Desserts</h3>
-                <article class="mainbackground__contentsmenu">
+                <h3 class="mainbackground__title">DESSERTS</h3>
+                <div class="mainbackground__title--item"></div>
+                <article class="mainbackground__contentsmenu1">
                     <h3>Macaron noisette et chocolat</h3>
                     <div class="mainbackground__contentsmenu--price">
-                        <p>Glace au caramel brun et sel de Guérande</p>
-                        <p>18€</p>
+                        <p class="light">Glace au caramel brun et sel de Guérande</p>
+                        <p class="bold">18€</p>
                     </div>
                 </article>
                 <article class="mainbackground__contentsmenu">
                     <h3>Baba au rhum revisité</h3>
                     <div class="mainbackground__contentsmenu--price">
-                        <p>Avec son coulis de citron</p>
-                        <p>22€</p>
+                        <p class="light">Avec son coulis de citron</p>
+                        <p class="bold">22€</p>
                     </div>
                 </article>
                 <article class="mainbackground__contentsmenu">
                     <h3>Tarte au citron meringuée</h3>
                     <div class="mainbackground__contentsmenu--price">
-                        <p>Destructurée</p>
-                        <p>23€</p>
+                        <p class="light">Destructurée</p>
+                        <p class="bold">23€</p>
                     </div>
                 </article>
                 <div class="mainbackground__widthinput">
