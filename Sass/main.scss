@@ -7,6 +7,7 @@ body {
     height: 0;
     font-family: 'Roboto', sans-serif;
 }
+
 #header{
     display: block; 
     box-shadow: 0 0 0.4rem rgba(0,0,0,0.25);
@@ -84,6 +85,11 @@ body {
         padding-left: 2rem;
         border-radius: 1.10rem;
         box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(0 0 0 / 0.13);
+        cursor: pointer;
+        &:hover {
+            background-color: #FDE6FF;
+            box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(0 0 0 / 0.20);
+        }
     }
     &__icon {
         margin-right: 1.5rem;
@@ -127,7 +133,11 @@ body {
         height: 280px;
         background-color: white;
         border-radius: 1rem;
-        box-shadow: 0 5px 15px #00000033;
+        box-shadow: 0 5px 15px rgba(0 0 0 / 0.13);
+        &:hover {
+            box-shadow: 0 5px 15px rgba(0 0 0 / 0.20);
+            transform: scale(1.01);
+        }
         &--object {
             position: absolute;
             top: 20px;
@@ -160,6 +170,13 @@ body {
             position: absolute;
             left: 285px;
             bottom: 30px;
+            &:hover {
+                background: linear-gradient(#9356DC, #FF79DA);
+                font-weight: 600;
+                transform: scale(1.1);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
     }
 }
@@ -252,6 +269,12 @@ body {
             position: absolute;
             top: 30px;
             left: 320px;
+            &:hover {
+                background: linear-gradient(#9356DC, #FF79DA);
+                font-weight: bold;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
     }
     &__title { /* bloquer mettre border bottom d'une taille fixe */
@@ -276,7 +299,12 @@ body {
         padding-right: 8px;
         background-color: $colorw;
         border-radius: 1rem;
-        box-shadow: 0 5px 10px #00000033;
+        box-shadow: 0 5px 10px rgba(0 0 0 / 0.13);
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.01);
+            box-shadow: 0 5px 10px rgba(0 0 0 / 0.20);
+        }
         &--price {
             display: flex;
             justify-content: space-between;
@@ -297,7 +325,12 @@ body {
         padding-right: 8px;
         background-color: $colorw;
         border-radius: 1rem;
-        box-shadow: 0 5px 10px #00000033;
+        box-shadow: 0 5px 10px rgba(0 0 0 / 0.13);
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.01);
+            box-shadow: 0 5px 10px rgba(0 0 0 / 0.20);
+        }
         &--price {
             display: flex;
             justify-content: space-between;

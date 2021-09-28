@@ -101,6 +101,11 @@ body {
   padding-left: 2rem;
   border-radius: 1.1rem;
   box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.13);
+  cursor: pointer;
+}
+.sectionfonction__disposition:hover {
+  background-color: #FDE6FF;
+  box-shadow: 0.25rem 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
 }
 .sectionfonction__icon {
   margin-right: 1.5rem;
@@ -145,7 +150,11 @@ body {
   height: 280px;
   background-color: white;
   border-radius: 1rem;
-  box-shadow: 0 5px 15px #00000033;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.13);
+}
+.sectionfood__containfood:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
 }
 .sectionfood__containfood--object {
   position: absolute;
@@ -180,6 +189,13 @@ body {
   position: absolute;
   left: 285px;
   bottom: 30px;
+}
+.sectionfood__containfood--icon:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  font-weight: 600;
+  transform: scale(1.1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .sectionfooter {
@@ -272,6 +288,12 @@ body {
   top: 30px;
   left: 320px;
 }
+.mainbackground__titleheader--iconh2:hover {
+  background: linear-gradient(#9356DC, #FF79DA);
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .mainbackground__title {
   /* bloquer mettre border bottom d'une taille fixe */
   position: relative;
@@ -295,7 +317,12 @@ body {
   padding-right: 8px;
   background-color: #fff;
   border-radius: 1rem;
-  box-shadow: 0 5px 10px #00000033;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.13);
+  cursor: pointer;
+}
+.mainbackground__contentsmenu1:hover {
+  transform: scale(1.01);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .mainbackground__contentsmenu1--price {
   display: flex;
@@ -316,7 +343,12 @@ body {
   padding-right: 8px;
   background-color: #fff;
   border-radius: 1rem;
-  box-shadow: 0 5px 10px #00000033;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.13);
+  cursor: pointer;
+}
+.mainbackground__contentsmenu:hover {
+  transform: scale(1.01);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .mainbackground__contentsmenu--price {
   display: flex;
