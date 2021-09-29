@@ -382,6 +382,69 @@ body {
   cursor: pointer;
 }
 
+/* animation opacity */
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animation-opacity {
+  animation: opacity 1s both;
+}
+
+#delay0 {
+  animation-delay: 0.1s;
+}
+
+#delay1 {
+  animation-delay: 0.2s;
+}
+
+#delay2 {
+  animation-delay: 0.3s;
+}
+
+#delay3 {
+  animation-delay: 0.4s;
+}
+
+#delay4 {
+  animation-delay: 0.5s;
+}
+
+#delay5 {
+  animation-delay: 0.6s;
+}
+
+#delay6 {
+  animation-delay: 0.7s;
+}
+
+#delay7 {
+  animation-delay: 0.8s;
+}
+
+#delay8 {
+  animation-delay: 0.9s;
+}
+
+#delay9 {
+  animation-delay: 1s;
+}
+
+/* fin d'animation opacity */
+@keyframes rotate {
+  /* animation rotation bouton validé */
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .bold {
   margin: 0;
   margin-bottom: 13px;
