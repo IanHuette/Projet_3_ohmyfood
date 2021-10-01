@@ -1,0 +1,22 @@
+$color: #f2f2f2;
+$colorw: #fff;
+$margindefault: 0;
+$margin: 15px;
+$marginrl: 20px;
+
+// for reference
+
+// 1) we define the style that will always be repeated
+// %example-placeholder {
+//     color: red;
+// }
+
+// 2) we define the elements on which the same styles will be applied
+// $elements-of-my-list: (".class1" ".class2");
+
+// 3) we loop over these elements and apply the styles
+// @each $element in $elements-of-my-list {
+//   #{$element} {
+//     @extend %example-placeholder;
+//   }
+// } 
