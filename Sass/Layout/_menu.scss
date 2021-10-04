@@ -30,7 +30,7 @@
     }
     &--menuitem { /*animation validé */
         background-color: #99E2D0;
-        margin: -39px -98px 0 16px;
+        margin: -39px -102px 0 16px;
         width: 96px;
         display:flex;
         align-items: center;
@@ -104,9 +104,8 @@
     &--iconh2 {
             margin-right: 40px;
             font-size: 24px;
-            position: absolute;
-            top: 30px;
-            left: 320px;
+            position: relative;
+            top: 10px;
             &:hover {
                 background: linear-gradient(#9356DC, #FF79DA);
                 font-weight: bold;
@@ -126,12 +125,12 @@
             bottom: 14px;
             left: 20px;
             height: 3px;
-            width: 12%;
+            width: 50px;
             background-color: #99e2d0;
         }
     }
     &__contentsmenu1 {
-    @include contentsmenu;
+        @include contentsmenu;
     }
     &__contentsmenu {
         @include contentsmenu;
@@ -212,5 +211,113 @@
         font-size: 10px;
         color: $colorw;
         margin-left: $marginrl;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px) { /* tablette */
+    .placementmediaqueries {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 30px;
+        font-size: 18px;
+    }
+    .restaurantContainer__imgfood {
+        width: 100%;
+        height: 450px;
+    }
+    .mainbackground {
+        display: flex;
+        flex-direction: column;
+        background-color: $color;
+        border-radius: 32px 32px 0 0;
+        position: relative;
+        bottom: 50px;
+        &__titleheader {
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: -15px;
+            h2 {
+            margin-top: 25px;
+            font-family: 'Shrikhand';
+            font-size: 28px;
+            font-weight: 300;
+            }
+            &--iconh2 {
+                position: relative;
+                left: 25px;
+                margin-right: 40px;
+                font-size: 24px;
+            }
+        }
+    }
+}
+@media screen and (min-width:1250px) { /* laptop */
+    .placementmediaqueries {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 30px;
+        font-size: 18px;
+    }
+    .restaurantContainer__imgfood {
+        width: 100%;
+        height: 600px;
+    }
+    .mainbackground__title--item {
+        position: relative;
+        bottom: 14px;
+        left: 400px;
+        height: 3px;
+        width: 50px;
+        background-color: rgb(153, 226, 208);
+    }
+    .mainbackground {
+        display: flex;
+        flex-direction: column;
+        background-color: $color;
+        border-radius: 32px 32px 0 0;
+        position: relative;
+        bottom: 50px;
+        &__titleheader {
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: -15px;
+            h2 {
+            margin-top: 25px;
+            font-family: 'Shrikhand';
+            font-size: 28px;
+            font-weight: 300;
+            }
+            &--iconh2 {
+                position: relative;
+                left: 25px;
+                margin-right: 40px;
+                font-size: 24px;
+            }
+        }
+    }
+    .mainbackground__contentsmenu1 {
+        margin-right: 400px;
+        margin-left: 400px;
+    }
+    .mainbackground__contentsmenu {
+        margin-right: 400px;
+        margin-left: 400px;
+    }
+    .mainbackground__title {
+        margin-right: 400px;
+        margin-left: 400px;
+    }
+    .sectionfooter__logofooter h3 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .sectionfooter__containfooter {
+        margin-left: 100px;
+        margin-right: 100px;
     }
 }
